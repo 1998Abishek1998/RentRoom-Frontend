@@ -1,0 +1,9 @@
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const AUTH_ERROR = 'AUTH_ERROR';
+export const ADD_USER = 'ADD_USER';
+export const USER_LOADED = 'USER_LOADED';
+export const PASSWORD_CHANGED = 'PASSWORD_CHANGED';
+export const LOG_OUT = 'LOG_OUT';
+export const FILE_ERROR = 'FILE_ERROR';
+export const ALL_USERS_LOADED = 'ALL_USERS_LOADED';
+export const ERROR_LOADING_ALL_USERS = 'ERROR_LOADING_ALL_USERS';
