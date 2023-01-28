@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 const Landing: React.FC<any> = ({ user })  => {
   console.log(user)
   return (
-    <div>Landing</div>
+    <div style={{ color: 'red'}}>asdasdasdasdasdsad</div>
   )
 }
 

@@ -12,7 +12,7 @@ const router = createBrowserRouter([
         path: '/home',
         element: <ProtectedRoute Component={Landing}/> ,
     },
-
+    
 ])
 
 export default router
