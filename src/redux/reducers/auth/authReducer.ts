@@ -7,6 +7,7 @@ const initialState = {
   user: null,
   loading: true,
   error: null,
+  token: null
 };
 
 const AuthReducer = (state = initialState, action: Action) => {
@@ -21,6 +22,7 @@ const AuthReducer = (state = initialState, action: Action) => {
         loading: false,
         user: payload.user,
         error: null,
+        token: payload.accessToken
       };
 
     case USER_LOADED:
@@ -30,6 +32,7 @@ const AuthReducer = (state = initialState, action: Action) => {
         loading: false,
         user: payload,
         error: null,
+        token: null
       };
 
     case AUTH_ERROR:
@@ -41,6 +44,7 @@ const AuthReducer = (state = initialState, action: Action) => {
         user: null,
         loading: false,
         error: payload?.message,
+        token: null
       };
     default:
       return state;

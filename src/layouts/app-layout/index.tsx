@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout, Space } from 'antd';
+import Approutes from '../../routerConfig/Approutes';
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -33,7 +34,7 @@ const footerStyle: React.CSSProperties = {
   backgroundColor: '#7dbcea',
 };
 
-const AppLayout = (props: {children: any}) => {
+const AppLayout = () => {
 
     return (
         <Space direction="vertical" style={{ width: '100%' }} size={[0, 48]}>    
@@ -41,7 +42,7 @@ const AppLayout = (props: {children: any}) => {
           <Layout>
             <Header style={headerStyle}>Header</Header>
             <Content style={contentStyle}>
-                {props.children}
+              <Approutes/>
             </Content>
             <Footer style={footerStyle}>Footer</Footer>
           </Layout>
